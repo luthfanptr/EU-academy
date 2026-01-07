@@ -1,47 +1,108 @@
-# Ronaldino log book
+# EU Academy  
+Learning Management System & Human Resource Management  
 
-tolong tulis sini yang perubahan terakhir (server log)
+## Tujuan Proyek
+Proyek **EU Academy** dikembangkan sebagai bagian dari **tugas mata kuliah Pemrograman Web Semester 4** yang dikerjakan secara bersama oleh mahasiswa mata kuliah Pemrograman Web kelas CR002.  
+Pengembangan sistem ini bertujuan untuk menerapkan konsep pemrograman web secara komprehensif, mulai dari analisis kebutuhan, perancangan sistem, implementasi backend dan frontend, integrasi database, hingga pemanfaatan layanan eksternal.
 
-1. 3 jun Buat folder uas dan nasi - elfan
-2. 4 jun Buat livewire kompro - elfan
-3. 4 jun selesai buat livewire semua - elfan
-4. 5 jun gua selesai integrasi db ke semua tuggas gua selesai yaaa... - elfan
-5. 5 jun gua perbaiki beberapa kekurangan di bagian fooder dan contact yang lupa - elfan
-6. 17 Jun gua perbaiki icon dan nama2 di admin page - elfan
-7. 19 jun gua membuat HRM dan styling - elfan
-8. 19 jun gua membuat LMS, styling, beberapa perbaikan - elfan
-9. 2 jul gua selesai membuat relasi dll tapi blom styling beberapa - elfan
-10. 3 Jul Selesai memuat Panel, role, permision walau masih kurang backup dulu deh - elfan
-11. 3 Jul Selesai semua panel, role, permision sudah kepisah2 bro wedeh - elfan
-11. 4 Jul Selesai semua panel register custom dan migration notif ribet banget anjay :v - elfan
-12. 5 Jul Belom selesai styling pergi ke lipo dulu :p - elfan
-13. 8 Jul Buat register + tambain wa custom livewire lama banget men wkwk :p - elfan
-14. 9 Jul Integrasi kriteria API wa buatan elfan tampan sendiri hehe :p - elfan
-15. 10 Jul Pembelian tanpa mitrans mentahan berhasil hehe :p - elfan
-16. 10 Jul kurang Task Jawaban sama upload, sisanya udah oke, kemudian harus benerin tabel murid rada membingungkan - elfan
-17. 11 Jul Midrans bisa dong hehe agak susah tapi weh membingungkan tapi ya bisa Puji Tuhan - elfan
-18. 11 Jul Mail API bisa Puji Tuhan - elfan
-19. 12 jul permission dan styling berat banget bos - elfan
-20. 13 jul pergantian tipe data beberapa koreksi - elfan
-21. 13 jul perbaikan kecil tapi rumit cuy wkwkwk - elfan
-22. 13 jul Upload Terakhir ke hosting utama, semoga berhasil besok - elfan
+## Deskripsi Proyek
+EU Academy adalah aplikasi web terpadu untuk lembaga bimbingan belajar bahasa asing yang berfokus pada pengajaran Bahasa Inggris dan Bahasa Jepang bagi pemula. Sistem ini dirancang untuk mendukung proses bisnis utama EU Academy, mulai dari company profile, pengelolaan sumber daya manusia, pembelajaran berbasis LMS, hingga pembayaran online dan notifikasi otomatis.
 
+Aplikasi ini dikembangkan berdasarkan dokumen **Business Requirement Document (BRD)** dan **Software Requirements Specification (SRS)** untuk memastikan kesesuaian antara kebutuhan bisnis dan implementasi teknis.
 
-Backup (kontak elfan ketika akan backup)
+---
 
-1. 4 jun (livewire)
-2. 5 jun jadi 100 persen db
-3. 5 jun gua perbaiki beberapa yang kurang dan cross check
-4. 6 jun gua backup harian
-5. 17 Jun gua backup pekerjaan hari ini
-6. 18 Jun Belajar dikit role2
-7. 21 Jun Server rusak ditinggal ke China wkwk :p
-8. 1 Jul Server kembali menggunakan ct dengan domain calonsukses.social
-9. 3 Jul Buat Panel, role, permision.
-10. 4 Jul Rapat sama bro Wahyu
-12. 8 Jul pisah db ke central db gua - elfan
-13. 10 buat bot API wa sendiri dong wkwk - elfan
-14. 11 Push hasil si ilham styling boleh juga dia :p
+## Tujuan Pengembangan
+- Menyediakan platform digital terpusat untuk pengelolaan pembelajaran dan administrasi
+- Mempermudah proses pendaftaran peserta dan pembayaran course secara online
+- Mendukung pengelolaan pengajar, absensi, gaji, dan cuti melalui sistem HRM
+- Menyediakan LMS terstruktur dengan modul, quiz, penilaian, dan sertifikat digital
+- Mengotomatisasi notifikasi melalui email dan WhatsApp
 
+---
 
-CLOSE CASE
+## Ruang Lingkup Sistem
+Sistem EU Academy mencakup beberapa modul utama berikut:
+
+### 1. Company Profile
+- Home
+- About Us
+- Blog
+- Contact Us  
+
+### 2. HRM (Human Resource Management)
+- Manajemen karyawan dan pengajar
+- Departemen dan branch office
+- Absensi pegawai dan pengajar
+- Payroll (gaji karyawan dan pengajar)
+- Manajemen cuti pengajar
+
+### 3. LMS (Learning Management System)
+- Event Course berbasis batch 6 bulan
+- Jadwal pembelajaran offline (72 sesi)
+- Modul pembelajaran dalam bentuk PDF
+- Quiz sebagai tugas dan indikator kehadiran
+- Penilaian dan rekap nilai
+- Sertifikat digital kelulusan
+
+### 4. Payment Gateway
+- Integrasi Midtrans Sandbox
+- Aktivasi otomatis akses LMS setelah pembayaran berhasil
+- Verifikasi pembayaran melalui callback API
+
+### 5. Notifikasi Otomatis
+- Email (SMTP) untuk invoice pembayaran
+- WhatsApp (Baileys) untuk ucapan selamat bergabung dan notifikasi akademik
+
+---
+
+## Karakteristik Pengguna
+- **Admin Operasional Digital**
+- **Tim Administrasi**
+- **Tim Akademik**
+- **Pengajar**
+- **Peserta Didik**
+
+Setiap pengguna memiliki hak akses berbasis **RBAC (Role-Based Access Control)**.
+
+---
+
+## Tech Stack
+- **Backend**: Laravel 12
+- **Frontend**: Livewire
+- **Admin Panel**: Filament v3
+- **Database**: MySQL
+- **Payment Gateway**: Midtrans Sandbox
+- **Notifikasi Email**: SMTP
+- **Notifikasi WhatsApp**: Node.js, Express.js, Baileys
+- **Containerization**: Docker
+- **Web Server**: Nginx
+- **Security Tunnel**: Cloudflare Zero Trust
+
+---
+
+## Fitur Utama
+- CRUD Company Profile
+- Manajemen HRM lengkap
+- LMS terintegrasi dengan event course
+- Pembayaran online dan verifikasi otomatis
+- Pengiriman invoice dan notifikasi otomatis
+- Penerbitan dan unduh sertifikat digital
+- API internal untuk integrasi pembayaran dan notifikasi
+
+---
+
+## Kebutuhan Non-Fungsional
+- Keamanan data dengan enkripsi dan HTTPS
+- Autentikasi berbasis role
+- Akses sistem 24/7
+- Antarmuka user-friendly
+- Sistem scalable dan portable menggunakan Docker
+- Integrasi real-time dengan layanan eksternal
+
+---
+
+## Batasan Sistem
+- Pembelajaran dilakukan secara offline
+- Pembayaran hanya melalui Midtrans
+- Materi pembelajaran hanya tersedia dalam bentuk digital
